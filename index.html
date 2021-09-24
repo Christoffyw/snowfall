@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Kraken Games - Snowfall</title>
+    <link rel="shortcut icon" href="TemplateData2/favicon.ico">
+    <link rel="stylesheet" href="TemplateData2/style.css">
+    <script src="TemplateData2/UnityProgress.js"></script>
+    <script src="Build2/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build2/Build.json", {onProgress: UnityProgress});
+    </script>
+    <style>
+        .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #23d0f7;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+}
+      .button:hover {background-color: #1fb9db}
+
+        .button:active {
+          background-color: #1fb9db;
+          box-shadow: 0 5px #666;
+          transform: translateY(4px);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Snowfall - Winter Game Jam 2020</div>
+      </div>
+    </div>
+    <a class="button" href="index.html"><font face="verdana">Go Back</font></a>
+  </body>
+</html>
